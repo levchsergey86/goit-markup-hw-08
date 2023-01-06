@@ -1,0 +1,12 @@
+.logo {
+    color: var(--title-text-color);
+    font-family: Raleway, cursive;
+    letter-spacing: 0.03em;
+    font-size: 26px;
+    line-height: 1.19;
+
+    &__span {
+        color: var(--accent-color);
+    }
+}
+

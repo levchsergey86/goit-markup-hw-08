@@ -1,0 +1,21 @@
+.hero__button {
+    min-width: 200px;
+    border: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Roboto;
+    background-color: var(--accent-color);
+    color: var(--global-white-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus, 
+    &:hover {
+        background-color: #188CE8;
+    }
+}

@@ -1,0 +1,188 @@
+.footer {
+    background-color: #2F303A;
+    color: var(--global-white-color);
+    font-size: 14px;
+    font-style: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: flex;
+        align-items: baseline;
+    }
+    
+    &__logo {
+        display: inline-block;
+        margin-bottom: 28px;
+        padding: 0px;
+        color: var(--global-white-color);
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    
+        
+    } 
+    
+    &__logo-span {
+        color: var(--accent-color);
+    }
+    
+    
+    
+    &__item {
+        margin-bottom: 9px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    
+
+    
+    &__address {
+        font-style: normal;
+        letter-spacing: 0.03em;
+        line-height: 1.71;
+    }
+    
+    &__location {
+        margin-bottom: 9px;
+        color: var(--global-white-color);
+        letter-spacing: 0.03em;
+        line-height: 1.71;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+     }
+    
+
+    
+    &__social-block {
+        margin-left: 70px;
+    }
+    
+    &__text-social {
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-align: left;
+    }
+    
+    &__social-list {
+        width: 206px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    &__social-link {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 44px;
+        height: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus
+         {
+            border-radius: 50%;
+            background-color: var(--accent-color);
+        }
+    }
+    
+
+    
+    &__social-icon {
+        fill: var(--global-white-color);
+    }
+    
+    &__subscription {
+        margin-left: auto;
+    }
+    
+    &__subscription-header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--primary-white-color);
+        margin-bottom: 20px;
+    }
+    
+    &__form {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    &__input {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background-color: #2F303A;
+        padding: 16px;
+        width: 358px;
+        margin-right: 12px;
+        outline: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+    &__input[placeholder] {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+    &__subscription-button {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        min-width: 200px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        padding: 10px 28px;
+        cursor: pointer;
+        font-family: Roboto;
+        background-color: var(--accent-color);
+        color: var(--global-white-color);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: #188CE8;
+        }
+    }
+    
+
+    
+    &__svg-subscription {
+        fill: var(--global-white-color);
+        width: 24px;
+        height: 24px;
+    }
+}
+
+

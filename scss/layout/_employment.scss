@@ -1,0 +1,50 @@
+.employment {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 94px;
+
+    &__title {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: var(--title-text-color);
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+    
+    &__pictures {
+        display: flex;
+        gap: 30px;
+    }
+    
+    &__pictures-item {
+        display: flex;
+    }
+    
+    &__pictures-thumb {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__text-pictures {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 14px;
+        line-height: 1.14;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--global-white-color);
+        background-color: rgba(47, 48, 58, 0.8);
+        min-width: 370px;
+        padding: 27px;  
+    }
+}
+

@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>WebStudio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="pagebody">
     <header class="header">
         <div class="container">
             <nav class="header__nav">
-                <a href="" class="logo"><span>Web</span>Studio</a> 
+                <a href="" class="logo"><span class="logo__span">Web</span>Studio</a> 
                 <ul class="header__menu">
                     <li class="header__item">
                         <a class="header__link header__link--current" href="./index.html">Студія</a>
@@ -279,44 +278,44 @@
             <div class="container">
                 <h2 class="clients__regular">Постійні клієнти</h2>
                 <ul class="clients__logo">
-                    <li class="client__logo-frame">
-                            <a class="client__link" href="">
-                                <svg class="client__icon" width="106" height="60">
+                    <li class="clients__logo-frame">
+                            <a class="clients__link" href="">
+                                <svg class="clients__icon" width="106" height="60">
                                     <use href="./images/symbol-defs.svg#icon-yaco"></use>
                                 </svg>
                             </a>
                      </li>
-                    <li class="client__logo-frame">
-                            <a class="client__link" href="">
-                                <svg class="client__icon" width="106" height="60">
+                    <li class="clients__logo-frame">
+                            <a class="clients__link" href="">
+                                <svg class="clients__icon" width="106" height="60">
                                     <use href="./images/symbol-defs.svg#icon-company"></use>
                                 </svg>
                             </a>
                     </li>
-                    <li class="client__logo-frame"> 
-                            <a class="client__link" href="">
-                                <svg class="client__icon" width="106" height="60">
+                    <li class="clients__logo-frame"> 
+                            <a class="clients__link" href="">
+                                <svg class="clients__icon" width="106" height="60">
                                     <use href="./images/symbol-defs.svg#icon-company2"></use>
                                 </svg>
                             </a>
                     </li>
-                    <li class="client__logo-frame">
-                            <a class="client__link" href="">
-                                <svg class="client__icon" width="106" height="60">
+                    <li class="clients__logo-frame">
+                            <a class="clients__link" href="">
+                                <svg class="clients__icon" width="106" height="60">
                                     <use href="./images/symbol-defs.svg#icon-fosterpeters"></use>
                                 </svg>
                             </a>
                     </li>
-                    <li class="client__logo-frame">
-                            <a class="client__link" href="">
-                                <svg class="client__icon" width="106" height="60">
+                    <li class="clients__logo-frame">
+                            <a class="clients__link" href="">
+                                <svg class="clients__icon" width="106" height="60">
                                     <use href="./images/symbol-defs.svg#icon-brand"></use>
                                 </svg>
                             </a>
                     </li>
-                    <li class="client__logo-frame">
-                            <a class="client__link" href="">
-                                <svg class="client__icon" width="106" height="60">
+                    <li class="clients__logo-frame">
+                            <a class="clients__link" href="">
+                                <svg class="clients__icon" width="106" height="60">
                                     <use href="./images/symbol-defs.svg#icon-tagline"></use>
                                 </svg>
                             </a>
@@ -326,7 +325,7 @@
         </section>
     </main>
 <!-- Footer -->
-    <footer class="footer__general">
+    <footer class="footer">
         <div class="footer__container container ">
             <div>
                 <a class="footer__logo" href="">
@@ -396,13 +395,13 @@
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
             <div class="modal__container">
-                <button data-modal-close type="button" class="modal_close button-icon">
+                <button data-modal-close type="button" class="modal__close button-icon">
                     <svg class="button-icon-svg">
                         <use href="./images/symbol-defs.svg#icon-cross"></use>
                     </svg>
                 </button>
                 <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
-            <form class="form" autocomplete="on">
+            <form class="form-field" autocomplete="on">
                 <div class="modal__form-field form-field">
                     <label for="name" 
                             class="form-field__label">Ім'я</label>
@@ -447,19 +446,21 @@
                 </div>
                 <div class="modal__textarea textarea">
                     <label for="coment" 
-                            class="form-field__label">Коментар</label>
-                    <textarea name=coment" 
+                        class="form-field__label">Коментар</label>
+                        <div class="modal__textarea-control">
+                            <textarea name=coment" 
                             placeholder="Введіть текст" 
                             id="coment" 
                             rows="10" 
                             class="form-field__textarea"></textarea>
+                        </div>
                 </div>
                 <div class="modal__form-checkbox form-checkbox">
                     <input type="checkbox" 
                     class="form-checkbox__checkbox" 
                     name="policy" 
                     id="policy">
-                    <svg class="form-checkbox__checkbox-icon" width="16px" height="15px">
+                    <svg class="form-checkbox__checkbox-icon">
                         <use href="./images/symbol-defs.svg#icon-check"></use>
                     </svg>
                 <label for="policy" 
