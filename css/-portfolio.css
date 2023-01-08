@@ -1,14 +1,3 @@
-/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-*, ::after, ::before {
-  box-sizing: border-box;
-}
-
-html {
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
-}
-
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -18,16 +7,33 @@ body {
   margin: 0;
 }
 
-body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 hr {
+  box-sizing: content-box;
   height: 0;
-  color: inherit;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
 }
 
 abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
@@ -36,8 +42,8 @@ b, strong {
   font-weight: bolder;
 }
 
-code, kbd, pre, samp {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+code, kbd, samp {
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -60,9 +66,8 @@ sup {
   top: -0.5em;
 }
 
-table {
-  text-indent: 0;
-  border-color: inherit;
+img {
+  border-style: none;
 }
 
 button, input, optgroup, select, textarea {
@@ -72,45 +77,64 @@ button, input, optgroup, select, textarea {
   margin: 0;
 }
 
+button, input {
+  overflow: visible;
+}
+
 button, select {
   text-transform: none;
 }
 
-[type=button], [type=reset], [type=submit], button {
-  -webkit-appearance: button;
-}
-
-::-moz-focus-inner {
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-:-moz-focusring {
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-:-moz-ui-invalid {
-  box-shadow: none;
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
 }
 
 legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
   padding: 0;
+  white-space: normal;
 }
 
 progress {
   vertical-align: baseline;
 }
 
-::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
 [type=search] {
-  -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -119,8 +143,20 @@ progress {
   font: inherit;
 }
 
+details {
+  display: block;
+}
+
 summary {
   display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
 }
 
 h1,
@@ -181,20 +217,6 @@ address {
   --global-white-color:#ffffff;
   --address-color: rgba(255, 255, 255, 0.5);
   --logo-color: #AFB1B8;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
 }
 
 /*SiteNav*/
@@ -526,7 +548,8 @@ address {
   line-height: 1.56;
   letter-spacing: 0.03em;
 }
-.portfolio__link:focus .portfolio__submenu-overlay, .portfolio__link:hover .portfolio__submenu-overlay {
+
+.portfolio__link:hover .portfolio__submenu-overlay {
   opacity: 1;
   transform: translateY(0%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -576,4 +599,18 @@ address {
   border-radius: 50%;
   background-color: var(--accent-color);
   fill: var(--global-white-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }/*# sourceMappingURL=portfolio.css.map */

@@ -1,7 +1,7 @@
+@import './base/reset';
 @import './base/base';
-@import './base/reset';
 @import './utils/variables';
-@import './base/reset';
+@import './utils/hidden';
 
 @import './layout/header';
 @import './layout/footer';
@@ -10,4 +10,3 @@
 @import './components/address';
 @import './components/logo';
 @import './components/social-links';
-@import './components/hidden';

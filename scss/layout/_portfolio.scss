@@ -134,12 +134,10 @@
         letter-spacing: 0.03em;
     }
     
-    &__link:hover 
-    &__submenu-overlay {
+    &__link:focus &__submenu-overlay,
+    &__link:hover &__submenu-overlay {
         opacity: 1;
         transform: translateY(0%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-
-
