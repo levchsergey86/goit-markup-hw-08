@@ -7,39 +7,84 @@
     padding-bottom: 60px;
 
     &__container {
-        display: flex;
-        align-items: baseline;
+        @media screen and (min-width: 1200px) {
+            display: flex;            
+            }
     }
-    
+
     &__logo {
         display: inline-block;
-        margin-bottom: 28px;
+        margin-bottom: 20px;
         padding: 0px;
         color: var(--global-white-color);
         font-family: Raleway;
         font-weight: 500;
         font-size: 26px;
         line-height: 1.19;
-        letter-spacing: 0.03em;
-    
-        
+        letter-spacing: 0.03em;       
+        text-align: center;
+
+        @media screen and (min-width:1200px) {
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 28px;  
+        }
     } 
     
     &__logo-span {
         color: var(--accent-color);
     }
     
-    
-    
+    &__social-block {
+        text-align: center;
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 767px) {
+            margin-right: 74px;            
+            }
+
+          
+        @media screen and (min-width: 1200px) {
+            margin-left: 70px;          
+            margin-right: 0px;      
+            margin-bottom: 0px;
+            }  
+    }
+
+    &__logo-address {
+        text-align: center;
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 767px) {
+        margin-left: 61px;            
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 0px;     
+            margin-bottom: 0px;
+            }
+
+    }
+      
     &__item {
-        margin-bottom: 9px;
+        text-align: center;
+        margin-bottom: 8px;
 
         &:last-child {
             margin-bottom: 0px;
         }
+
+        @media screen and (min-width:1200px) {
+            text-align: left;
+        }
     }
     
-
+    &__flex-container {
+        @media screen and (min-width: 767px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
     
     &__address {
         font-style: normal;
@@ -60,22 +105,22 @@
         }
      }
     
-
-    
-    &__social-block {
-        margin-left: 70px;
-    }
-    
     &__text-social {
         margin-bottom: 20px;
         font-size: 14px;
         font-weight: 700;
         line-height: 1.14;
         letter-spacing: 0.03em;
-        text-align: left;
+        text-align: center;
+
+        @media screen and (min-width:1200px) {
+            text-align: left;
+        }
     }
     
     &__social-list {
+        margin-left: auto;
+        margin-right: auto;
         width: 206px;
         height: 44px;
         display: flex;
@@ -102,17 +147,27 @@
         }
     }
     
-
-    
     &__social-icon {
         fill: var(--global-white-color);
     }
     
-    &__subscription {
-        margin-left: auto;
+    &__form {
+        @media screen and (min-width:1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            gap: 12px;
+        }
     }
     
+    &__subscription {
+        @media screen and (min-width:1200px) {
+            margin-left: 93px;            
+        }
+    }
+
     &__subscription-header {
+        text-align: center;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -120,20 +175,24 @@
         text-transform: uppercase;
         color: var(--primary-white-color);
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;  
+            
+        }
     }
-    
-    &__form {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    
+  
     &__input {
+        display: block;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        max-width: 450px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         background-color: #2F303A;
         padding: 16px;
-        width: 358px;
-        margin-right: 12px;
         outline: none;
         font-size: 16px;
         font-weight: 400;
@@ -141,6 +200,11 @@
         letter-spacing: 0.03em;
         text-align: left;
         color: rgba(255, 255, 255, 0.6);
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+            margin-bottom: 0px;
+        }
     }
     
     &__input[placeholder] {
@@ -153,6 +217,8 @@
     }
     
     &__subscription-button {
+        margin-right: auto;
+        margin-left: auto;
         display: flex;
         gap: 10px;
         align-items: center;

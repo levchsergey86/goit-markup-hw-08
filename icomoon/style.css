@@ -1,0 +1,60 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-check-frame {
+  width: 1.06640625em;
+}
+
+.icon-check {
+  width: 1.2998046875em;
+}
+
+.icon-brand {
+  width: 1.7666015625em;
+}
+
+.icon-company {
+  width: 1.7666015625em;
+}
+
+.icon-company2 {
+  width: 1.7666015625em;
+}
+
+.icon-envelope {
+  width: 1.3330078125em;
+}
+
+.icon-form-mail {
+  width: 1.3330078125em;
+}
+
+.icon-fosterpeters {
+  width: 1.7666015625em;
+}
+
+.icon-tagline {
+  width: 1.7666015625em;
+}
+
+.icon-tel {
+  width: 0.625em;
+}
+
+.icon-yaco {
+  width: 1.7666015625em;
+}

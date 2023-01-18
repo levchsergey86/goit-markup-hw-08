@@ -8,8 +8,14 @@
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
 
     &__regular {
         margin-top: 0px;
@@ -26,9 +32,24 @@
     &__logo {
         display: flex;
         gap: 30px;
-        align-items: center ;
+        flex-wrap: wrap;
         justify-content: center;
-    }
+        }
+
+    // &__logo-frame {
+        
+    //     // flex-basis: calc((100% - 30px) / 2);
+
+    //     // @media (min-width: 768px) {
+    //     //     flex-basis: calc((100% - 60px) / 3);
+    //     // }
+
+    //     // @media (min-width: 1200px) {
+    //     //     flex-basis: calc((100% - 150px) / 6);
+    //     // }
+    //         }
+
+        
     
     &__link {
         fill: var(--logo-color);

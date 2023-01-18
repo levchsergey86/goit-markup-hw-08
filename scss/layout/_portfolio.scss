@@ -9,9 +9,16 @@
     &__buttons {
         gap: 8px;
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 56px;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        max-width: 420px;
+
+        @media screen and (min-width:768px) {
+            max-width: 100%;
+            justify-content: center;            
+        }
     }
     
     &__button {
@@ -83,13 +90,31 @@
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
+        flex-basis: calc((100% - 30px) / 2);
     }
     
     &__examples 
     &__pictures {
         display: block;
     }
-    
+
+    &__pictures {
+        width: 450px;
+        height: 294px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 294px;
+            
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+            height: 294px;
+            
+        }
+    }
+
     &__description {
         padding: 20px 24px;
         border-bottom: 1px solid #EEEEEE;
@@ -104,6 +129,16 @@
         &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+
+        // @media screen and (min-width:768px) {
+        //     &:nth-child(2n) {
+        //         width: 354px;
+        //     }
+        // }
+    }
+
+    &__link:nth-child(1-2) {
+        width: 354px;
     }
     
     &__submenu-overlay {

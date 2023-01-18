@@ -1,8 +1,14 @@
 .employment {
+    display: none;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 94px;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+
 
     &__title {
         margin-top: 0px;
