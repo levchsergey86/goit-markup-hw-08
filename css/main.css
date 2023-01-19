@@ -947,6 +947,7 @@ summary {
 @media screen and (min-width: 767px) {
   .footer__social-block {
     margin-right: 74px;
+    margin-top: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -954,6 +955,7 @@ summary {
     margin-left: 70px;
     margin-right: 0px;
     margin-bottom: 0px;
+    margin-top: 12px;
   }
 }
 .footer__logo-address {

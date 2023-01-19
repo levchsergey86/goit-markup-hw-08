@@ -65,18 +65,25 @@
         }
     }
 
-    
+    &__item {
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
 
-    
+        @media screen and (min-width: 1200px) {
+            width: auto;
+        }
+    }
 
-    
     &__title {
         color: var(--title-text-color);
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
         margin-bottom: 4px;
-        
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     
     &__text {
@@ -105,7 +112,6 @@
         @media screen and (min-width: 768px) {
             width: 354px;
             height: 294px;
-            
         }
 
         @media screen and (min-width: 1200px) {
@@ -129,18 +135,8 @@
         &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
-
-        // @media screen and (min-width:768px) {
-        //     &:nth-child(2n) {
-        //         width: 354px;
-        //     }
-        // }
     }
 
-    &__link:nth-child(1-2) {
-        width: 354px;
-    }
-    
     &__submenu-overlay {
         position: absolute;
         top: 0;
