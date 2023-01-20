@@ -19,14 +19,20 @@
 
     &__regular {
         margin-top: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         padding-top: 0px;
         padding-bottom: 0px;
         color: var(--title-text-color);
-        font-size: 36px;
-        line-height: 1.16;
+        font-size: 28px;
+        line-height: 1.17;
         letter-spacing: 0.03em;
         text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.17;
+            margin-bottom: 50px;
+        }
     }
     
     &__logo {

@@ -3,15 +3,9 @@
     color: var(--primary-text-color);
     font-family: Roboto;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.02em;
-    line-height: 1.17;
-
-    @media screen and (min-width:1200px) {
-        font-size: 14px;
-        line-height: 1.14;
-    }
-
+    line-height: 2;
 
     &:hover,
     &:focus {

@@ -8,7 +8,8 @@
 
     &__container {
         @media screen and (min-width: 1200px) {
-            display: flex;            
+            display: flex;
+            align-items: baseline;            
             }
     }
 
@@ -25,8 +26,6 @@
         text-align: center;
 
         @media screen and (min-width:1200px) {
-            margin-right: auto;
-            margin-left: auto;
             margin-bottom: 28px;  
         }
     } 
@@ -37,19 +36,11 @@
     
     &__social-block {
         text-align: center;
-        margin-bottom: 60px;
 
-        @media screen and (min-width: 767px) {
-            margin-right: 74px; 
-            margin-top: 12px;           
-            }
 
-          
+
         @media screen and (min-width: 1200px) {
-            margin-left: 70px;          
-            margin-right: 0px;      
-            margin-bottom: 0px;
-            margin-top: 12px;   
+            margin-left: 70px;
             }  
     }
 
@@ -57,13 +48,9 @@
         text-align: center;
         margin-bottom: 60px;
 
-        @media screen and (min-width: 767px) {
-        margin-left: 61px;            
-        }
-
         @media screen and (min-width: 1200px) {
-            margin-left: 0px;     
-            margin-bottom: 0px;
+             text-align: left;
+             margin-bottom: 0px;
             }
 
     }
@@ -82,10 +69,15 @@
     }
     
     &__flex-container {
+        margin-bottom: 60px;
+
         @media screen and (min-width: 767px) {
             display: flex;
             justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0px;
         }
+
     }
     
     &__address {

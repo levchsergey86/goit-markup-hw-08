@@ -11,16 +11,31 @@
 
     &__title {
         margin-top: 0px;
-        margin-bottom: 50px;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        margin-bottom: 10px;
         color: var(--title-text-color);
-        font-size: 36px;
-        line-height: 1.16;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
         letter-spacing: 0.03em;
-        text-align: left;
-    } 
+        text-align: center;
 
+        @media screen and (min-width:768px) {
+            text-align: left;  
+        }
+    }
+
+    // &__title {
+    //     margin-top: 0px;
+    //     margin-bottom: 50px;
+    //     padding-top: 0px;
+    //     padding-bottom: 0px;
+    //     color: var(--title-text-color);
+    //     font-size: 36px;
+    //     line-height: 1.16;
+    //     letter-spacing: 0.03em;
+    //     text-align: left;
+    // }
+    
     &__list {
 
         @media (min-width: 768px) {
@@ -52,16 +67,6 @@
 
     &__item:last-child {
         margin-bottom: 0px;
-    }
-
-    &__title {
-        margin-top: 0px;
-        margin-bottom: 10px;
-        color: var(--title-text-color);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
     }
 
     &__text {
