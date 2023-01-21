@@ -10,7 +10,7 @@
 </head>
 <body class="pagebody">
     <header class="header">
-        <div class="container">
+        <div class="header__container container">
             <nav class="header__nav">
                 <a href="" class="logo"><span class="logo__span">Web</span>Studio</a> 
                 <div class="header__main-menu">
@@ -25,7 +25,9 @@
                             <a class="header__main-menu-link" href="">Контакти</a>
                         </li>
                     </ul>
-                    <ul class="header__main-menu-address">
+                </div>
+            </nav>
+                <ul class="header__main-menu-address">
                         <li class="header__main-menu-item">
                                 <a class="header__main-menu-email email" href="mailto:info@devstudio.com">
                                 <svg class="header__main-menu-email-icon">
@@ -33,14 +35,13 @@
                                 </svg>info@devstudio.com</a>
                         </li>
                         <li class="header__main-menu-item">
-                            <a class="header__main-menu tel" href="tel:+380961111111">
+                            <a class="header__main-menu-tel tel" href="tel:+380961111111">
                                 <svg class="header__main-menu-tel-icon">
                                     <use href="./images/symbol-defs.svg#icon-tel"></use>
                                 </svg>
                                 +38 096 111 11 11</a>
                         </li>
-                    </ul>
-                </div>
+                </ul>
                 <button 
                 class="header__mobile-menu-button js-open-menu" 
                 type="button" 
@@ -54,7 +55,6 @@
                         <use class="header__icon-mobile-menu" href="./images/symbol-defs.svg#icon-open-menu"></use>
                     </svg>
                 </button>
-            </nav>
         </div>
     </header>
     <main>
@@ -365,10 +365,10 @@
         </button>
         <ul class="mobile-menu__menu">
             <li class="mobile-menu__item">
-                <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+                <a class="mobile-menu__link" href="./index.html">Студія</a>
             </li>
             <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+                <a class="mobile-menu__link mobile-menu__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="mobile-menu__item">
                 <a class="mobile-menu__link" href="">Контакти</a>
@@ -376,11 +376,11 @@
         </ul>
         <ul class="mobile-menu__address">
             <li class="mobile-menu__item">
-                <a class="mobile-menu__tel tel" href="tel:+380961111111">
+                <a class="mobile-menu__tel" href="tel:+380961111111">
                     +38 096 111 11 11</a>
             </li>
             <li class="mobile-menu__item">
-                <a class="mobile-menu__email email" href="mailto:info@devstudio.com">
+                <a class="mobile-menu__email" href="mailto:info@devstudio.com">
                 info@devstudio.com</a>
             </li>
         </ul>

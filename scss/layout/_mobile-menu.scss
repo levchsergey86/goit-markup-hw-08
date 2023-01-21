@@ -8,6 +8,9 @@
   display: none;
   padding-left: 40px;
   padding-top: 48px;
+  padding-bottom: 48px;
+  padding-right: 21px;
+  overflow-y: scroll;
 
   &.is-open {
     display: block;
@@ -60,6 +63,11 @@
     color: var(--accent-color);
   } 
 }
+
+&__link--current {
+  color: var(--accent-color);
+}
+
 
 &__address {
   display: flex;

@@ -893,14 +893,10 @@ summary {
   text-align: center;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 767px) {
-  .footer__logo-address {
-    margin-bottom: 0;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__logo-address {
     text-align: left;
+    margin-bottom: 0px;
   }
 }
 .footer__item {
@@ -921,8 +917,9 @@ summary {
 @media screen and (min-width: 767px) {
   .footer__flex-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 0px;
   }
 }
 .footer__address {
@@ -1214,9 +1211,6 @@ summary {
   display: none;
   padding-left: 40px;
   padding-top: 48px;
-  padding-bottom: 48px;
-  padding-right: 21px;
-  overflow-y: scroll;
 }
 .mobile-menu.is-open {
   display: block;
